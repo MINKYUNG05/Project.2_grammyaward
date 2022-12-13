@@ -30,7 +30,7 @@ header {
 #up {
     width: 100%;
     height: 40px;
-    background-color: black;
+    background-color: rgb(40, 39, 39);
     text-align:center;
 }
 
@@ -106,7 +106,8 @@ header {
     width: 100%;
     height: 250px;
     margin: 0 auto;
-    background-color: lightblue;
+    background-color: rgb(40, 39, 39);
+    color:white;
 
 
 }
@@ -120,11 +121,31 @@ header {
 
 #box2 {
     width: 100%;
-    height: 400px;
+    height: 630px;
     margin: 0 auto;
-    text-align: center;
-    background-color: lightcoral;
+    background-color:black;
+    color:white;
 }
+#box2 h2{padding: 20px 0 0 20px; font-size: 30px;}
+#box2 hr{width: 95%; border: 1px solid gray; margin: 20px 0 0 20px;}
+#box2 h4{padding: 20px 0 20px 20px;}
+#box2 img{width: 188px; height: 100px; }
+#box2 ul{width: 100%; height: 70%; display: flex; justify-content: space-evenly; 
+    align-items: center; margin-left: 20px;}
+#box2 ul li{width: 23%; height: 450px; background-color:pink; margin-top: 40px; font-size:25px; text-shadow: 3px 3px 3px  black;
+    border-radius: 5px; display:flex; flex-direction:column; justify-content: flex-end; align-items: center;}
+#box2 ul :nth-child(1){background-image: url("../img/price.jpg"); background-size: cover; background-position:center;}
+#box2 ul :nth-child(2){background-image: url("../img/crew.jpg"); background-size: cover; background-position:center;}
+#box2 ul :nth-child(3){background-image: url("../img/win7.png"); background-size: cover; background-position:center;}
+#box2 ul :nth-child(4){background-image: url("../img/win8.png"); background-size: cover; background-position:center;}
+
+    /* background-image: linear-gradient(red, transparent),linear-gradient(to top left, lime, transparent),linear-gradient(to top right, blue, transparent); 
+ */
+#box2 button{background-image:none !important; border-radius: 50px; width: 160px; height:40px; background-color: black;
+    color:white; border: 1px solid black; margin: 20px 0;}
+#box2 button:hover{background-color: white; color: black; border: 1px solid white;}
+
+
 
 #box3 {
     width: 100%;
@@ -144,11 +165,19 @@ header {
 
 #box5 {
     width: 100%;
-    height: 400px;
+    height: 600px;
     margin: 0 auto;
     text-align: center;
-    background-color: lightgray;
+    background-color: white;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
+#box5 p{height: 48%; font-size:70px; text-align:left; border-bottom: 5px solid black; 
+        margin-left:20px; }
+#box5 video{width: 43%; height: 65%;}
+
+
 
 #box6 {
     width: 100%;
