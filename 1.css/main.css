@@ -30,7 +30,7 @@ header {
 #up {
     width: 100%;
     height: 40px;
-    background-color: rgb(40, 39, 39);
+    background-color: lightsteelblue;
     text-align:center;
 }
 
@@ -52,7 +52,11 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+<<<<<<< HEAD
 #down1{width: 30%; height:100%; background-color:black; text-align:left; margin-left: 50px;}
+=======
+#down1{width: 30%; height:100%; background-color:gold; text-align:center;}
+>>>>>>> 0898dd6d0bf5a5202d095a58f79ee2b38e6d4234
 #down1 img {
     width: 195px;
     height: 75px;
@@ -95,8 +99,12 @@ header {
     color: white;
     align-items: center;
 }
+<<<<<<< HEAD
 #sliderbox{width: 40%; height: 40%; display:flex; flex-direction:column;
         margin: 200px 0 0 400px; font-weight: bolder;}
+=======
+#sliderbox{width: 50%; height: 40%; display:flex; flex-direction:column; margin-left: 20px;}
+>>>>>>> 0898dd6d0bf5a5202d095a58f79ee2b38e6d4234
 #sliderbox p{font-size: 55px; }
 #sliderbox hr{width: 568px; border: 1px solid white; margin: 20px 0; }
 #sliderbox button{border-radius: 50px; width: 160px; height:40px; background-color:white;
