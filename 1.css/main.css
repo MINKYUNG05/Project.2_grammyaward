@@ -218,14 +218,14 @@ header {
 
 #box6 hr{width: 95%; border: 1px solid gray; margin-left: 400px; margin-bottom: 20px; }
 #box6title{display:flex; justify-content: space-between; align-items: center; margin-left: 400px;}
-#box6title h2{ font-size: 25px; display: inline-block; margin-bottom: 30px;}
+#box6title h2{ font-size: 25px; display: inline-block; }
 #box6title button{border-radius: 50px; width: 160px; height:40px; background-color:black;
     color:white; border: 1px solid black; cursor:pointer; margin-right:50px;}
 
 #box6 img{width: 100%; height: 33%;  border-bottom: 5px solid black; margin: 0 auto; }
 
 #box6  ul{width: 104%; height: 100%; display: flex; justify-content: space-evenly; 
-    align-items: center; margin-left: 400px; }
+    align-items: center; margin-left: 400px; margin-top: 50px;}
 #box6 ul li{width: 17%; height: 100%; color: black; margin:10px; }
 #box6 span{font-size:16px; margin:30px 0; }
 #box6 p{font-size:13px; font-weight:normal!important;  margin:10px 0; }
@@ -318,11 +318,11 @@ footer {
     background-color: black;}
 
 #sponsors{display:flex; justify-content: space-between; align-items: center; color:white;
-margin-left:400px; }
+margin-left:300px; }
 #sponsors h2{ font-size: 25px; display: inline-block;}
 #sponsors button{border-radius: 50px; width: 160px; height:40px; background-color:white !important;
     color:black; border: 1px solid black; cursor:pointer; margin-right:5%; }
-footer hr{width: 95%; border: 2px solid gray; margin: 40px 0 40px 400px;}
+footer hr{width: 95%; border: 2px solid gray; margin: 40px 0 40px 300px;}
 
 
     footer ul{
@@ -338,3 +338,18 @@ footer hr{width: 95%; border: 2px solid gray; margin: 40px 0 40px 400px;}
     }
     footer ul li{font-size:11px; color:white;}
     footer ul li img{width: 75%; height: 100%; }
+
+
+    #footer2{ width: 100%;
+        height: 500px;
+        background-color: black;
+        color:white;}
+
+        #footer2 ul{width: 65%;
+            height: 20%;
+            display: flex;
+            justify-content: space-around;
+            text-align:center;
+            align-items:center;
+            color:white;
+            margin: 0 auto;}
