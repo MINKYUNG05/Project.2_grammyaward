@@ -84,20 +84,33 @@ header {
 
 #slider {
     width: 100%;
-    height: 600px;
+    height: 800px;
     background-color: gold;
     background-image: url("../img/stage2.webp");
     background-position: 30% 28%;
+    background-size: cover;
     display: flex;
     justify-content: flex-start;
-    background-size: cover;
     text-align:left;
     color: white;
     align-items: center;
 }
 #sliderbox{width: 40%; height: 40%; display:flex; flex-direction:column;
-        margin: 200px 0 0 400px; font-weight: bolder;}
-#sliderbox p{font-size: 55px; }
+        margin: 200px 0 0 400px; font-weight: bolder; }
+
+#sliderbox p{font-size: 55px;  position: relative; animation: fadeInUp 2s;}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
 #sliderbox hr{width: 568px; border: 1px solid white; margin: 20px 0; }
 #sliderbox button{border-radius: 50px; width: 160px; height:40px; background-color:white;
     color:black; border: 1px solid white; cursor:pointer;}
@@ -114,9 +127,9 @@ header {
 }
 #box1 h2{padding: 20px 0 20px 400px;}
 #box1 img{width: 100%; height: 100px;  border-bottom: 5px solid black; margin: 0 auto;}
-#box1 ul{width: 90%; height: 50%; display: flex; justify-content: space-evenly; 
+#box1 ul{width: 65%; height: 50%; display: flex; justify-content: space-evenly; 
     align-items: center; margin-left: 400px; text-align:center;}
-#box1 ul li{width: 11%; height: 130px; overflow:hidden; border-radius: 20px; }
+#box1 ul li{width: 15%; height: 105%; overflow:hidden; border-radius: 20px; }
 #box1 img:hover{transform:scale(1.05); transition:transform .2s; }
 
 
@@ -127,7 +140,19 @@ header {
     background-color:black;
     color:white;
 }
-#box2 h2{padding: 20px 0 0 400px; font-size: 30px;}
+#box2 h2{padding: 20px 0 0 400px; font-size: 30px; animation: fadeInUp 2s;}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+
 #box2 hr{width: 95%; border: 1px solid gray; margin-left: 400px; margin-top: 20px;}
 #box2 h4{padding: 20px 0 20px 400px;}
 #box2 img{width: 188px; height: 100px; }
@@ -153,6 +178,7 @@ header {
     background-color: black;
     color:white;
 }
+
 
 #box3 hr{width: 95%; border: 1px solid gray; margin-left: 400px; margin-bottom: 20px; }
 #box3title{display:flex; justify-content: space-between; align-items: center; margin-left: 400px;}
@@ -291,38 +317,26 @@ header {
 
 #box9 {
     width: 100%;
-    height: 800px;
+    height: 850px;
+    background-image: url("../img/bwbg.jpg");
+    background-position: 10% 30%;
+    background-size: cover;
     display:flex;
     justify-content: space-around;
     align-items: center;
-    background-color: black;
 }
 
-#box9left{width: 50%; height: 100%; color:white;}
-#box9 ul{width: 100%; height: 100%; display:flex; flex-direction:column; justify-content: center; align-items: center;}
-#box9 ul li{width: 100%;  margin-left:400px;}
-
-#box9right{width: 50%; height: 80%; font-size: 100px; text-align:right;}
-    #b91{width: 100%; height: 100%; /* background-image: url("../img/perform2.jpg"); 
-        position: 30% 75%; background-size:cover; */
-   
-        font-weight: 700;
-        font-size:  70px;
-        text-shadow: -15px 5px 20px #ced0d3;
-        letter-spacing: 0.02em;
-        text-align: center;
-        color: #F9f1cc;
-        text-shadow: 5px 5px 0px #FFB650, 
-          10px 10px 0px #FFD662, 
-          15px 15px 0px  #FF80BF, 
-  /*         20px 20px 0px #EF5097, 
-          25px 25px 0px #6868AC, 
-          30px 30px 0px #90B1E0; */
-      }
-
-    #b92{width: 100%; height: 25%; display:none;}
-    #b93{width: 100%; height: 25%;  display:none;}
-    #b94{width: 100%; height: 25%;  display:none;}
+#box9left{width: 15%; height: 100%; color:white;}
+#box9 ul{width: 100%; height: 100%; display:flex; flex-direction:column; 
+    justify-content: center; align-items: center; margin-left:250px;}
+#box9 ul li{width: 100%; height:17%; line-height:120px; font-size:39px;border-right:10px solid white;}
+#box9 ul li:hover{background-color: white; color:black; cursor:pointer;}
+#box9right{width: 50%; height: 80%; font-size: 100px; display:flex; flex-direction:column; justify-content: center; align-items: center; 
+    text-align:right;}
+    #b91{width: 100%; height: 25%; font-size:  70px; color: white; }
+    #b92{width: 100%; height: 25%; font-size:  70px; color: white; display:none;}
+    #b93{width: 100%; height: 25%; font-size:  70px; color: white; display:none;}
+    #b94{width: 100%; height: 25%; font-size:  70px; color: white; display:none;}
 
 
 
@@ -383,7 +397,7 @@ margin-left:300px;  padding-top: 100px;}
 #sponsors h2{ font-size: 25px; display: inline-block;}
 #sponsors button{border-radius: 50px; width: 160px; height:40px; background-color:white !important;
     color:black; border: 1px solid black; cursor:pointer; margin-right:5%; }
-footer hr{width: 95%; border: 1px solid gray; margin: 40px 0 40px 300px;}
+footer hr{width: 70%; border: 1px solid gray; margin: 40px 0 40px 300px;}
 
 
     footer ul{
@@ -404,7 +418,7 @@ footer hr{width: 95%; border: 1px solid gray; margin: 40px 0 40px 300px;}
     footer ul li:nth-child(7){width: 300%; height: 20%; }
 
     #footer2{ width: 100%;
-        height: 400px;
+        height: 600px;
         background-color: black;
         color:white;}
 
@@ -435,11 +449,11 @@ footer hr{width: 95%; border: 1px solid gray; margin: 40px 0 40px 300px;}
     #footer2box3{width: 20%; line-height:30px; text-align:center;}
     #footer2box3 p{font-weight:normal!important;}
 
-    #footer3{width: 100%; height: 680px; background-color:rgb(24, 24, 24); color:white;
-    font-size: 100px; }
-    #footer3box{display:flex; justify-content: flex-start; flex-direction:column; margin-left:300px; 
-        border-bottom: 1px solid white;}
+    #footer3{width: 100%; height: 900px; background-color:black; color:white;
+    font-size: 140px;font-weight: normal !important; }
+
+    #footer3box{display:flex; justify-content: flex-start; flex-direction:column; margin-left:300px;}
     #footer3 p{font-size: 13px; display: block; margin: 50px 0 50px 300px; }
-    #footer3 hr{width: 95%; border: 1px solid white; margin-left: 300px;}
+    #footer3 hr{width: 70%; border: 1px solid white; margin-left: 300px;}
     #last{width: 100%; height: 40px; background-color:black; font-size: 10px; font-weight:normal!important;
                     text-align:center; display:flex; align-items:center; justify-content: center;}

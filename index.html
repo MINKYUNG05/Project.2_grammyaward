@@ -8,8 +8,57 @@
     <link rel="stylesheet" href="1.css/main.css">
     <link rel="shortcut icon" href="img/fav2.ico">
 
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(function () {
+            $('#global').click(function () {
+                $('#box9 ul li').removeClass("active");
+                $(this).addClass("active");
+                
+                $("#b91").fadeIn("slow");
+                $("#b92").hide();
+                $("#b93").hide();
+                $("#b94").hide();
+
+            });
 
 
+            $('#internet').click(function () {
+                $('#box9 ul li').removeClass("active");
+                $(this).addClass("active");
+                
+                $("#b92").fadeIn("slow");
+                $("#b91").hide();
+                $("#b93").hide();
+                $("#b94").hide();
+
+            });
+
+            $('#users').click(function () {
+                $('#box9 ul li').removeClass("active");
+                $(this).addClass("active");                
+                $("#b93").fadeIn("slow");
+                $("#b91").hide();
+                $("#b92").hide();
+                $("#b94").hide();
+
+            });
+
+            $('#grammys').click(function () {
+                $('#box9 ul li').removeClass("active");
+                $(this).addClass("active");
+                $("#b91").hide();
+                $("#b92").hide();
+                $("#b93").hide();
+                $("#b94").fadeIn("slow");
+
+            });
+        });
+
+
+
+    </script>
 </head>
 <body>
     
@@ -60,15 +109,15 @@
             <ul>
                 <li><img src="img/metaverse.png" alt="grammy"><br>
                 Metaverse</li>
-                <li><img src="img/web.png" alt="grammy"><br>
+                <li><img src="img/web.webp" alt="grammy"><br>
                     Web and Mobile Sites</li>
                 <li><img src="img/video.jpg" alt="grammy"><br>
                     Video</li>
-                <li><img src="img/social.jpg" alt="grammy"><br>
+                <li><img src="img/social2.webp" alt="grammy"><br>
                     Social</li>
-                <li><img src="img/podcast.webp" alt="grammy"><br>
+                <li><img src="img/podcast.jpg" alt="grammy"><br>
                    Podcasts</li>
-                <li><img src="img/game.webp" alt="grammy"><br>
+                <li><img src="img/game.jpg" alt="grammy"><br>
                     Games</li>
             
             </ul>
@@ -94,7 +143,7 @@
         </section>
 
         <section id="box3">
-
+         
             <hr>
             <div id="box3title">
             <h2>Latest Features</h2> <button> View All</button>
@@ -133,7 +182,7 @@
                     Games</li>
             
             </ul>
-
+  
         </section>
 
 
@@ -289,15 +338,15 @@
         <section id="box9">
            <div id="box9left">
             <ul>
-                <li>01. Global</li>
-                <li>02. Internet</li>
-                <li>03. Users</li>
-                <li>04. Grammys</li>
+                <li id="global">Global</li>
+                <li id="internet">Internet</li>
+                <li id="users">Users</li>
+                <li id="grammys">Grammys</li>
             </ul>
         </div>
 
         <div id="box9right">
-            <div id="b91">7,945,654,343<br>Global<br>Populations</div>
+            <div id="b91">7,945,654,343<br>Global Populations</div>
             <div id="b92">1,643,543,432<br>Websites</div>
             <div id="b93">5,053,266,875<br>Internet Users</div>
             <div id="b94">578 Grammys<br>Won in 2022</div>
@@ -406,6 +455,7 @@
 
 
         <div id="footer3">
+            <hr>
             <div id="footer3box">
             Honoring<br>
             The Best Of The<br>
@@ -414,6 +464,7 @@
             </div>
             <p>Site designed <br>
             by BASIC®</p>
+            <hr>
             
             <div id="last">© 2022 The Webby Awards. All rights reserved.</div>
 
