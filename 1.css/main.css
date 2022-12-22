@@ -144,7 +144,7 @@ header {
     #box2 h4{margin: 10px 0 10px 400px;}
     #box2 hr{margin: 20px 0 20px 400px;}
 
-    .swiper{width:100%; height: 70%;}
+    .swiper{width:100%; height: 70%; opacity: 0;}
 
     .swiper-slide {text-align: center; font-size: 18px; font-weight:bolder;
 
