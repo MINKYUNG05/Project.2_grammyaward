@@ -1,77 +1,117 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
     <style>
-        div{width: 100px; height:100px; background-color:gold; }
-    </style>    
-
-
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
-
-<script type="text/javascript">
-$('.center').slick({
-  centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
+      html,
+      body {
+        position: relative;
+        height: 100%;
       }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
       }
-    }
-  ]
-});
-</script>
+      .swiper{
+        width:65%; height: 50%;
+      }
 
-</head>
-    <body>
-  
-        <h2>Center Mode</h2>
-        <div class="slider center">
-            <div>
-                <h3>1</h3>
-            </div>
-            <div>
-                <h3>2</h3>
-            </div>
-            <div>
-                <h3>3</h3>
-            </div>
-            <div>
-                <h3>4</h3>
-            </div>
-            <div>
-                <h3>5</h3>
-            </div>
-            <div>
-                <h3>6</h3>
-            </div>
-        </div>
-        <pre><code class="language-javascript">
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        font-weight:bolder;
 
-            </code></pre>
-        <hr/>
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
 
-    </body>
-  </html>
+      .swiper-wrapper{width: 100%; height: 70%;  
+    align-items: center; /* margin-left: 400px; */}
+    
+    .swiper-slide{width: 23%; height: 450px;  margin-top: 40px; font-size:25px; color:white;
+    border-radius: 5px; display:flex; flex-direction:column; justify-content: flex-end; align-items: center; text-align:center;}
+
+    .swiper-slide:nth-child(1){background-image: url("img/musicpop.webp"); background-size: cover; background-position:center;}
+    .swiper-slide:nth-child(2){background-image: url("img/price.jpg"); background-size: cover; background-position:center;}
+    .swiper-slide:nth-child(3){background-image: url("img/popart.webp"); background-size: cover; background-position:center;}
+    .swiper-slide:nth-child(4){background-image: url("img/meta.webp"); background-size: cover; background-position:center;}
+    .swiper-slide:nth-child(5){background-image: url("img/tech.webp"); background-size: cover; background-position:center;}
+    .swiper-slide:nth-child(6){background-image: url("img/best2.webp"); background-size: cover; background-position:center;}
+
+
+    .swiper-slide button{background-image:none !important; border-radius: 50px; width: 160px; height:40px; background-color:transparent;
+    color:white; border: 2px solid white; margin: 20px 0;}
+    .swiper-slide button:hover{background-color: white; color: black; border: 1px solid white;}
+
+
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">Grammy Awards 2022<br> Industry Report<button> Read Now</button></div>
+        <div class="swiper-slide">2022 Grammy Winners<br> Gallery + Index <button> Read Now</button></div>
+        <div class="swiper-slide">Meet the Newest <br> Judges for <br> The Grammy Awards<button> Read Now</button></div>
+        <div class="swiper-slide">New Categories for<br> Metverse, Responsible <br> Technology and More
+          <button> Read Now</button></div>
+        <div class="swiper-slide"> Responsible<br> Technology Report <button> Download Now</button></div>
+        <div class="swiper-slide"> See All the Best<br> Moments From The <br> 26th Annual Grammy<br>
+          Awards Show <button> Read Now</button></div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+     
+        slidesPerView: 4,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>

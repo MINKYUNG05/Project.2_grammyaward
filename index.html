@@ -7,8 +7,10 @@
     <title>Home | Grammy Awards</title>
     <link rel="stylesheet" href="1.css/main.css">
     <link rel="shortcut icon" href="img/fav2.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    
 
     <script>
         $(function () {
@@ -119,6 +121,12 @@
                    Podcasts</li>
                 <li><img src="img/game.jpg" alt="grammy"><br>
                     Games</li>
+
+                    <li><img src="img/app.png" alt="grammy"><br>
+                        Apps</li>
+
+                        <li><img src="img/media.png" alt="grammy"><br>
+                            Media</li>
             
             </ul>
         </section>
@@ -129,36 +137,45 @@
             <h2>The Latest From The grammys</h2>
             <hr>
             <h4>The Good Stuff</h4>
-            <div class="swiper-wrapper">
-            <ul>
-                <li class="swiper-slide">Grammy Awards 2022<br> Industry Report<button> Read Now</button></li>
-                <li class="swiper-slide"> 2022 Grammy Winners<br> Gallery + Index <button> Read Now</button></li>
-                <li class="swiper-slide">Meet the Newest <br> Judges for <br> The Grammy Awards<button> Read Now</button></li>
-                <li class="swiper-slide">New Categories for<br> Metverse, Responsible <br> Technology and More
-                    <button> Read Now</button></li>
-                <li class="swiper-slide"> Responsible<br> Technology Report <button> Download Now</button></li>
-                <li class="swiper-slide"> See All the Best<br> Moments From The <br> 26th Annual Grammy<br>
-                    Awards Show <button> Read Now</button></li>
-                </div>
-            <div class="swiper-scrollbar"></div>
-            </ul>
+    
+           <div class="swiper mySwiper">
+
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">Grammy Awards 2022<br> Industry Report<button> Read Now</button></div>
+        <div class="swiper-slide">2022 Grammy Winners<br> Gallery + Index <button> Read Now</button></div>
+        <div class="swiper-slide">Meet the Newest <br> Judges for <br> The Grammy Awards<button> Read Now</button></div>
+        <div class="swiper-slide">New Categories for<br> Metverse, Responsible <br> Technology and More
+          <button> Read Now</button></div>
+        <div class="swiper-slide"> Responsible<br> Technology Report <button> Download Now</button></div>
+        <div class="swiper-slide"> See All the Best<br> Moments From The <br> 26th Annual Grammy<br>
+          Awards Show <button> Read Now</button></div>
+        <div class="swiper-slide">New Grammy Judges<br> 2022<button> Read Now</button></div>
+        <div class="swiper-slide">New Grammy Podcast<br> 2022<button> Read Now</button></div>
+        <div class="swiper-slide">The Stories <br> Behind the Build<button> See the Experiences</button></div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+     
+        slidesPerView: 4,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
 
         </section>
-        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-      
-        <!-- Initialize Swiper -->
-        <script>
-          var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            scrollbar: {
-              el: ".swiper-scrollbar"
     
-              // hide: true,
-            }
-          });
-        </script>
-
 
         <section id="box3">
          
