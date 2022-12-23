@@ -131,3 +131,61 @@ $(document).ready(function(){
         });
     });
 });
+
+//*스크롤에 따 나타나는 요소
+$(document).ready(function(){
+    $(window).scroll(function(){
+        $('#box8_tit').each(function(){
+            var bottom_of_element=$(this).offset().top+$(this).outerHeight()/2;
+            var bottom_of_window=$(window).scrollTop()+$(window).height();
+
+            if(bottom_of_window>bottom_of_element){
+                $(this).animate({'opacity':'1'},700);
+            }
+        });
+    });
+});
+
+
+//*스크롤에 따 나타나는 요소
+$(document).ready(function(){
+    $(window).scroll(function(){
+        $('#box10tit').each(function(){
+            var bottom_of_element=$(this).offset().top+$(this).outerHeight()/2;
+            var bottom_of_window=$(window).scrollTop()+$(window).height();
+
+            if(bottom_of_window>bottom_of_element){
+                $(this).animate({'opacity':'1'},700);
+            }
+        });
+    });
+});
+
+
+//*스크롤에 따 나타나는 요소
+$(document).ready(function(){
+    $(window).scroll(function(){
+        $('#box11tit').each(function(){
+            var bottom_of_element=$(this).offset().top+$(this).outerHeight()/2;
+            var bottom_of_window=$(window).scrollTop()+$(window).height();
+
+            if(bottom_of_window>bottom_of_element){
+                $(this).animate({'opacity':'1'},700);
+            }
+        });
+    });
+});
+
+$(document).ready(function(){
+    $(window).scroll(function(){
+        $('#footer3tit').each(function(){
+            var bottom_of_element=$(this).offset().top+$(this).outerHeight()/2;
+            var bottom_of_window=$(window).scrollTop()+$(window).height();
+
+            if(bottom_of_window>bottom_of_element){
+                $(this).animate({'opacity':'1'},700);
+            }
+        });
+    });
+});
+

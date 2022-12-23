@@ -87,47 +87,52 @@
 
         
         <section id="box2">
-            <h2>The Latest From The grammys</h2>
-            <hr>
-            <h4>The Good Stuff</h4>
-    
-           <div class="swiper mySwiper">
+            <div class="inner">
+                <h2>The Latest From The grammys</h2>
+                <hr>
+                <h4>The Good Stuff</h4>
+        
+                <div class="swiper mySwiper">
+        
+                    <div class="swiper-wrapper">
+        
+                        <div class="swiper-slide">Grammy Awards 2022<br> Industry Report<button> Read Now</button></div>
+                        <div class="swiper-slide">2022 Grammy Winners<br> Gallery + Index <button> Read Now</button></div>
+                        <div class="swiper-slide">Meet the Newest <br> Judges for <br> The Grammy Awards<button> Read
+                                Now</button></div>
+                        <div class="swiper-slide">New Categories for<br> Metverse, Responsible <br> Technology and More
+                            <button> Read Now</button>
+                        </div>
+                        <div class="swiper-slide"> Responsible<br> Technology Report <button> Download Now</button></div>
+                        <div class="swiper-slide"> See All the Best<br> Moments From The <br> 26th Annual Grammy<br>
+                            Awards Show <button> Read Now</button></div>
+                        <div class="swiper-slide">New Grammy Podcast<br> 2022<button> Read Now</button></div>
+                        <div class="swiper-slide">The Stories <br> Behind the Build<button> See the Experiences</button></div>
 
-      <div class="swiper-wrapper">
 
-        <div class="swiper-slide">Grammy Awards 2022<br> Industry Report<button> Read Now</button></div>
-        <div class="swiper-slide">2022 Grammy Winners<br> Gallery + Index <button> Read Now</button></div>
-        <div class="swiper-slide">Meet the Newest <br> Judges for <br> The Grammy Awards<button> Read Now</button></div>
-        <div class="swiper-slide">New Categories for<br> Metverse, Responsible <br> Technology and More
-          <button> Read Now</button></div>
-        <div class="swiper-slide"> Responsible<br> Technology Report <button> Download Now</button></div>
-        <div class="swiper-slide"> See All the Best<br> Moments From The <br> 26th Annual Grammy<br>
-          Awards Show <button> Read Now</button></div>
-        <div class="swiper-slide">New Grammy Podcast<br> 2022<button> Read Now</button></div>
-        <div class="swiper-slide">The Stories <br> Behind the Build<button> See the Experiences</button></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+        
+        
+            </div>
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".mySwiper", {
 
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-     
-        slidesPerView: 5,
-        spaceBetween: 10,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    </script>
-
+                    slidesPerView: 4,
+                    spaceBetween: 10,
+                    loop: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                });
+            </script>
         </section>
-    
 
         <section id="box3">
          
@@ -320,7 +325,7 @@
             <h2>Crafted With Code</h2> <button> View The Projects</button>
             </div>
             <ul>
-                <li><span>The Stories<br>Behind the<br> Build</span>
+                <li><span id="box8_tit">The Stories<br>Behind the<br> Build</span>
                   <p> <br>Crafted with Code is a collaborative showcase<br>
                    presented by The grammy Awards and WP Engine,<br>
                    highlighting grammy-recognized websites and the<br>
@@ -364,7 +369,7 @@
 
         <section id="box10"> 
 
-            <h1>The Grammy's Heightest <br> Honor</h1>
+            <h1 id="box10tit">The Grammy's Heightest <br> Honor</h1>
             <p>The New York Times</p>
 
             <div id="flowword">
@@ -385,7 +390,7 @@
             <hr>
 
             <ul>
-                <li><span>Netted</span>
+                <li><span id="box11tit">Netted</span>
                    <p>As a subscriber to Netted’s weekly email, you’ll be <br>
                     the first to hear about indispensable new apps,<br>
                     products, and services that make life easier. <br>
@@ -461,10 +466,10 @@
         <div id="footer3">
             <hr>
             <div id="footer3box">
-            Honoring<br>
+            <span id="footer3tit">Honoring<br>
             The Best Of The<br>
             Internet Since <br>
-            ©1997<br>
+            ©1997<br></span>
             </div>
             <p>Site designed <br>
             by BASIC®</p>
