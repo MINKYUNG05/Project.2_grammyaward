@@ -61,7 +61,7 @@ $(document).ready(function(){
 //*스크롤에 따 나타나는 요소 2슬라이더
 $(document).ready(function(){
     $(window).scroll(function(){
-        $('#box3_slider').each(function(){
+        $('.swiper-wrapper').each(function(){
             var bottom_of_element=$(this).offset().top+$(this).outerHeight()/2;
             var bottom_of_window=$(window).scrollTop()+$(window).height();
 
