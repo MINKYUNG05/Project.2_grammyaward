@@ -1,59 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{margin:0; padding:0; text-decoration:none; list-style-type: none; }
-        #popup{width: 100%; height:800px; background-color:lightcoral; position:relative; 
-                text-align:center; color:white; font-weight:bolder; font-size:25px; }
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style-type: none;
+        }
+
+        #wrap{width:100%; height: 100vh; position:relative;
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            background-color:lightgray;}
+
+        #popup {
+            width: 50%;
+            height: 800px;
+            /* background-image: linear-gradient(to bottom, #870000, #190a05);; */
+            background-image: linear-gradient(to bottom, #DECBA4, #3E5151);
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size: 25px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        #popup-head {
+            width: 100%;
+            height:4%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            background-color:transparent;
+            text-align:center;
+            font-size: 20px;
+            padding: 10px 0;
+            border-radius: 10px 10px 0 0;
+            
+        }
+
+        #popup-head img {
+            width: 25px;
+            height: 25px;
+            margin: 0 10px 0 0;
+            
+        }
 
 
-        #popup-head{width:100%; height:100%; display:flex; justify-content: space-between; text-align:center; 
-            position:absolute; }
-        #popup-head img{width:25px; height:25px;}
+
+        #popup-logo img {
+            width: 30%;
+            height: 20%;
+            margin: 100px 0 40px 0 ;
+        }
 
 
+        input {
+            width: 50%;
+            height: 50px;
+            background-color: transparent;
+            border-top: transparent;
+            border-left: transparent;
+            border-right: transparent;
+            border-bottom: white 3px solid;
+            color: white;
+            font-size: 20px;
+            outline:none;
+        }
 
-        #popup-logo img{width: 30%; height:20%;}
+        input:hover{ background-color: transparent;
+            border-top: transparent;
+            border-left: transparent;
+            border-right: transparent;
+            border-bottom: white 5px solid;
+            color: white;
+            font-size: 20px;}
 
+        #forget {
+            width:50%;
+            height: 50px;
+            font-size: 12px;
+            font-weight: normal !important;
+            margin:0 auto;
+            text-align:right;
+            text-decoration:underline !important;
+        }
+        #text1{font-size:25px; margin:15px 0;}
+        #text2{font-size:15px; font-weight: normal !important; margin:15px 0;}
 
-        input{width: 80%; height:100px; background-color:transparent; border-top:transparent; border-left:transparent;
-                border-right:transparent; border-bottom:white 3px solid; color:white; font-size:20px;}
+        #signin {
+            border-radius: 50px;
+            width: 50%;
+            height: 40px;
+            background-color: white;
+            color: black;
+            border: 1px solid white;
+            cursor: pointer;
+            margin: 20px 0;
+    
+        }
+        #content-down{ border-radius: 0 0 10px 10px; background-color:transparent;
+            border-top:white 1px solid;}
 
-                #forget{font-size: 15px; text-align:right; }
-        #signin{border-radius: 50px; width: 160px; height:40px; background-color:white;
-    color:black; border: 1px solid white; cursor:pointer; margin-right:50px;}
+        #signup {
+            border-radius: 50px;
+            width: 50%;
+            height: 40px;
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            cursor: pointer;
+        
+        }
 
-            #signup{border-radius: 50px; width: 160px; height:40px; background-color:transparent;
-    color:white; border: 1px solid white; cursor:pointer; margin-right:50px;}
+        #signup:hover{ background-color: white;
+            color: black;
+            border: 1px solid white;
+            cursor: pointer;}
+        #text3{font-size:15px; margin:30px 0 20px 0;}
     </style>
 </head>
+
 <body>
+    <div id="wrap">
 
-    <div id="popup">
-        <div id="popup-head">
-        
-            <span>Sign In</span> <a href="#"><img src="img/xmark.png"></a>
+        <div id="popup">
+            <div id="popup-head">
+
+                <span> </span> <span>Sign In</span> <a href="#" id="popup-close"><img src="img/delet.png"></a>
+            </div>
+
+            <div id="popup-content">
+                <ul>
+                    <li id="popup-logo"><img src="img/grammylogo4.png"></li>
+                    <li id="text1">Unlock Access to the Best of the Internet</li>
+                    <li id="text2">Register or sign-in using your Webby Grammys Account.</li>
+                    <li ><input type="text" value="Email Address" name="email"></li>
+                    <li><input type="text" value="Password" name="Password"></li>
+                    <li id="forget"><u>Forget Password?</u></li>
+                    <li><button id="signin">Sign In</button></li>
+                    <div id="content-down">
+                    <li id="text3">Don't Have An Account?</li>
+                    <li><button id="signup">Sign Up Now</button></li>
+                </ul>
+                </div>
+            </div>
         </div>
-
-        <div id="popup-content">
-        <ul>
-            <li id="popup-logo"><img src="img/grammylogo4.png"></li>
-            <li>Unlock Access to the Best of the Internet</li>
-            <li>Register or sign-in using your Webby Awards Account.</li>
-            <li><input type="text" value="Email Address" name="email"></li>
-            <li><input type="text" value="Password" name="Password"></li>
-            <li id="forget"><u>Forget Password?</u></li>
-            <li><button id="signin">Sign In</button></li>
-            <hr>
-            <li>Don't Have An Account?</li>
-            <li><button id="signup">Sign Up Now</button></li>
-        </ul>
     </div>
-    </div>
-    
 </body>
+
 </html>
