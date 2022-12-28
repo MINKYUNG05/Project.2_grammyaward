@@ -206,6 +206,7 @@ header {
 #box3 button{border-radius: 50px; width: 160px; height:40px; background-color:white;
     color:black; border: 1px solid white; cursor:pointer; margin-right:50px;  float:right;}
 #box3 .swiper-slide{flex-wrap:wrap;}
+#box3 .swiper{width:100%;}
 #box3 .swiper-wrapper{margin: 30px 0 0 0 ; opacity:0;}
 
         #box3 .swiper .swiper-pagination-bullet-active {background-color: white !important;}
