@@ -194,18 +194,69 @@ $(document).ready(function () {
 $(function () {
     $('#popup-open').click(function () {
         $('#wrap').css('display', 'block', );
-        $('html, body').css({'overflow': 'hidden', 'height': '100%'}); // 모달팝업 중 html,body의 scroll을 hidden시킴
-        $('#wrap').on('scroll touchmove mousewheel', function(event) { // 터치무브와 마우스휠 스크롤 방지
-    event.preventDefault();
-    event.stopPropagation();
+//         $('html, body').css({'overflow': 'hidden', 'height': '100%'}); // 모달팝업 중 html,body의 scroll을 hidden시킴
+//         $('#wrap').on('scroll touchmove mousewheel', function(event) { // 터치무브와 마우스휠 스크롤 방지
+//     event.preventDefault();
+//     event.stopPropagation();
 
-    return false;
-});
+//     return false;
+// });
     });
 
     $('#popup-close').click(function () {
         $('#wrap').css('display', 'none');
-        $('html, body').css({'overflow': 'auto', 'height': '100%'}); //scroll hidden 해제
-        $('#wrap').off('scroll touchmove mousewheel');
+        // $('html, body').css({'overflow': 'auto', 'height': '100%'}); //scroll hidden 해제
+        // $('#wrap').off('scroll touchmove mousewheel');
     });
 });
+
+
+window.onload=function(){
+/*desktop*/
+if (window.matchMedia("(min-width: 769px)").matches) { 
+    
+    var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    spaceBetween: 10,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
+
+    var swiper2 = new Swiper(".mySwipermulti", {
+    slidesPerView: 5,
+    spaceBetween: 10,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
+    /*mobil*/
+} else { 
+
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+    
+        var swiper2 = new Swiper(".mySwipermulti", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+
+}
+}
+
