@@ -1,3 +1,14 @@
+// mobile menu
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+
+
+// movement elements
 $(function () {
     $('#global').click(function () {
         $('#box9 ul li').removeClass("active");
@@ -192,7 +203,7 @@ $(document).ready(function () {
 
 //팝업열기&닫기
 $(function () {
-    $('#popup-open').click(function () {
+    $('.popup-open').click(function () {
         $('#wrap').css('display', 'block', );
 //         $('html, body').css({'overflow': 'hidden', 'height': '100%'}); // 모달팝업 중 html,body의 scroll을 hidden시킴
 //         $('#wrap').on('scroll touchmove mousewheel', function(event) { // 터치무브와 마우스휠 스크롤 방지

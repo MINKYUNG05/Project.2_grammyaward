@@ -1,164 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            text-decoration: none;
-            list-style-type: none;
+        body {
+            font-family: 'Lato', sans-serif;
         }
 
-        #wrap{width:100%; height: 100vh; position:relative;
-            backdrop-filter: blur(4px);
-            -webkit-backdrop-filter: blur(4px);
-            background-color:lightgray;}
-
-        #popup {
-            width: 50%;
-            height: 800px;
-            /* background-image: linear-gradient(to bottom, #870000, #190a05);; */
-            background-image: linear-gradient(to bottom, #DECBA4, #3E5151);
-            position: absolute;
-            top:50%;
-            left:50%;
-            transform:translate(-50%,-50%);
-            text-align: center;
-            color: white;
-            font-weight: bold;
-            font-size: 25px;
-            border-radius: 10px;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-        }
-
-        #popup-head {
+        .overlay {
+            height: 0%;
             width: 100%;
-            height:4%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0);
+            overflow-y: hidden;
+            transition: 0.5s;
+        }
+
+        .overlay-content {
+            position: relative;
+            top: 15%;
+            width: 100%;
+            text-align: center;
+            margin-top: 5px;
+        }
+        span{display:flex; justify-content: flex-end;}
+        span img{width: 10%; height:10%;}
+
+        .overlay a {
+            padding: 20px 8px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        hr{width: 90%; border: 1px solid rgba(128, 128, 128, 0.474);}
+        #text1{font-size: 30px; font-weight:bold;}
+        #popup-open{text-decoration:underline;}
+
+        .overlay a:hover,
+        .overlay a:focus {
+            color: #f1f1f1;
+        }
+
+        .overlay .closebtn {
             position: absolute;
-            background-color:transparent;
-            text-align:center;
-            font-size: 20px;
-            padding: 10px 0;
-            border-radius: 10px 10px 0 0;
-            
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
         }
 
-        #popup-head img {
-            width: 25px;
-            height: 25px;
-            margin: 0 10px 0 0;
-            
+        @media screen and (max-height: 450px) {
+            .overlay {
+                overflow-y: auto;
+            }
+
+            .overlay a {
+                font-size: 20px
+            }
+
+            .overlay .closebtn {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+            }
         }
-
-
-
-        #popup-logo img {
-            width: 30%;
-            height: 20%;
-            margin: 100px 0 40px 0 ;
-        }
-
-
-        input {
-            width: 50%;
-            height: 50px;
-            background-color: transparent;
-            border-top: transparent;
-            border-left: transparent;
-            border-right: transparent;
-            border-bottom: white 3px solid;
-            color: white;
-            font-size: 20px;
-            outline:none;
-        }
-
-        input:hover{ background-color: transparent;
-            border-top: transparent;
-            border-left: transparent;
-            border-right: transparent;
-            border-bottom: white 5px solid;
-            color: white;
-            font-size: 20px;}
-
-        #forget {
-            width:50%;
-            height: 50px;
-            font-size: 12px;
-            font-weight: normal !important;
-            margin:0 auto;
-            text-align:right;
-            text-decoration:underline !important;
-        }
-        #text1{font-size:25px; margin:15px 0;}
-        #text2{font-size:15px; font-weight: normal !important; margin:15px 0;}
-
-        #signin {
-            border-radius: 50px;
-            width: 50%;
-            height: 40px;
-            background-color: white;
-            color: black;
-            border: 1px solid white;
-            cursor: pointer;
-            margin: 20px 0;
-    
-        }
-        #content-down{ border-radius: 0 0 10px 10px; background-color:transparent;
-            border-top:white 1px solid;}
-
-        #signup {
-            border-radius: 50px;
-            width: 50%;
-            height: 40px;
-            background-color: transparent;
-            color: white;
-            border: 1px solid white;
-            cursor: pointer;
-        
-        }
-
-        #signup:hover{ background-color: white;
-            color: black;
-            border: 1px solid white;
-            cursor: pointer;}
-        #text3{font-size:15px; margin:30px 0 20px 0;}
     </style>
 </head>
 
 <body>
-    <div id="wrap">
 
-        <div id="popup">
-            <div id="popup-head">
-
-                <span> </span> <span>Sign In</span> <a href="#" id="popup-close"><img src="img/delet.png"></a>
-            </div>
-
-            <div id="popup-content">
-                <ul>
-                    <li id="popup-logo"><img src="img/grammylogo4.png"></li>
-                    <li id="text1">Unlock Access to the Best of the Internet</li>
-                    <li id="text2">Register or sign-in using your Webby Grammys Account.</li>
-                    <li ><input type="text" value="Email Address" name="email"></li>
-                    <li><input type="text" value="Password" name="Password"></li>
-                    <li id="forget"><u>Forget Password?</u></li>
-                    <li><button id="signin">Sign In</button></li>
-                    <div id="content-down">
-                    <li id="text3">Don't Have An Account?</li>
-                    <li><button id="signup">Sign Up Now</button></li>
-                </ul>
-                </div>
-            </div>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+        
+                    <a href="" id="text1">Enter Now</a>
+                    <a href="" id="text1">Winners</a>
+                    <a href="" id="text1">Features</a>
+                    <a href="" id="text1">Grammy Talks</a>
+               <hr>
+                    <a href="">About</a>
+                    <a href="">Resources</a>
+                    <a href="">Sponsors</a>
+                    <a href="">Press</a>
+                    <a href="">Podcast</a>
+                <hr>
+                <a href="#" id="popup-open">Gallery Login or Register</a>
         </div>
     </div>
+
+    <span onclick="openNav()" id="menuicon1">
+       <p></p> <img src="img/menuicon2.png" alt="menu"> </span>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
+
 </body>
 
 </html>
