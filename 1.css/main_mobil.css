@@ -1,6 +1,6 @@
 @charset "uft-8";
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 599px){
 
     * {
         font-family: 'Anton', sans-serif;
@@ -175,14 +175,14 @@
         text-align: center;
         margin-top: 5px;
     }
-    #menuicon1{width: 100%; height: 100%; background-color: black; display:flex; justify-content: space-between;
+    #menuicon1{width: 100%; background-color: black; display:flex; justify-content: space-between;
         font-size:30px; cursor:pointer;}
         #menu1{
             /* width: 30%; height:70%;  */
             /* width: 10%; height:70%; */
-            width: 35%; height:55%;
-            margin-top: 13px; margin-left: 10px;}
-        #menu2{width: 10%; height:35%; margin-top:25px; margin-right:10px;}
+            width: 150px; height:60px;
+            margin-top: 10px; margin-left: 10px;}
+        #menu2{width:20px; height:40px; margin-top:20px; margin-right:20px;}
 
     .overlay a {
         padding: 20px 8px;
@@ -193,7 +193,7 @@
         transition: 0.3s;
     }
     #menuhr{width: 90%; border: 1px solid rgba(128, 128, 128, 0.474); margin-left: 5%;}
-    #text1{font-size: 30px; font-weight:bold;}
+    #text1{font-size: 25px; font-weight:bold;}
     #popup-open{text-decoration:underline;}
 
     .overlay a:hover,
@@ -227,7 +227,7 @@
 
     header {
         width: 100%;
-        height: 150px;
+        height: 120px;
         margin: 0 auto;
         text-align: center;
         background-color: black;
@@ -564,7 +564,7 @@
     #box8 span{font-size:50px; margin: 10px 0; }
     #box8 img{width: 9%; height: 37%; }
     
-    #box8  ul{width: 100%; height: 80%; display: flex; flex-direction: column; justify-content: flex-start; 
+    #box8  ul{width: calc(100% - 10px); height: 80%; display: flex; flex-direction: column; justify-content: flex-start; 
         align-items: center; margin-left:10px; margin-top: 20px;}
     #box8 ul li{width: 90%; height: 100%; color: black;  vertical-align:center; }
     #box8 p{font-size:13px; font-weight:normal!important;  margin:10px 0; }
@@ -656,7 +656,7 @@
     
     footer {
         width: 100%;
-        height: 900px;
+        height: 725px;
         background-color: black;}
     
     #sponsors{width: 90%; display:flex; justify-content: space-between; align-items: center; color:white;
@@ -669,7 +669,7 @@
     
         footer ul{
             width: 100%;
-            height: 550px;
+            height: 400px;
             display: flex;
             flex-direction:column;
             text-align:center;
@@ -689,15 +689,15 @@
             background-color: black;
             color:white;}
     
-            #footer2 ul{width: 100%;
+            #footer2 ul{width: clac(100% - 30px);
                 height: 70%;
                 display: flex;
                 flex-direction:column;
                 color:white;
                 margin-left: 30px;
                 }
-    
-        #footer2box1 img{width:30%; margin-bottom:40px; }
+        
+        #footer2box1 img{width:50%; margin-bottom:10px; }
         #footer2title{width: 90%; font-size: 30px;}
     
         #footer2box2{width: 90%; text-align:left; }
@@ -724,7 +724,7 @@
         #footer2menu p{font-weight:normal !important; font-size: 13px !important;}    
 
 
-        #footer3{width: 100%; height: 700px; background-color:black; color:white;
+        #footer3{width: 100%; height: 800px; background-color:black; color:white;
         font-size: 140px;font-weight: normal !important; }
     
         #footer3tit{opacity:0; font-size:70px; margin-top: 70px;}

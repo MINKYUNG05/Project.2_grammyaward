@@ -222,52 +222,68 @@ $(function () {
 });
 
 
-window.onload=function(){
-/*desktop*/
-if (window.matchMedia("(min-width: 769px)").matches) { 
+window.onload = function(){
     
     var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 4,
+    slidesPerView: 1,
     spaceBetween: 10,
-    loop: true,
+    // loop: true,
+    grabCursor: true,
+    slidesPerGroupSkip: 1,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
+    breakpoints : {
+        600: {
+            slidesPerView: 2,
+        },
+        1000: {
+            slidesPerView: 4,
+        },
+    }
 });
 
     var swiper2 = new Swiper(".mySwipermulti", {
-    slidesPerView: 5,
+    slidesPerView: 1,
     spaceBetween: 10,
-    loop: true,
+    // loop: true,
+    grabCursor: true,
+    slidesPerGroupSkip: 1,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
+    breakpoints : {
+        600: {
+            slidesPerView: 3,
+        },
+        1000: {
+            slidesPerView: 5,
+        },
+    }
 });
-    /*mobil*/
-} else { 
-
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        loop: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
+}
+    // var swiper = new Swiper(".mySwiper", {
+    //     slidesPerView: 1,
+    //     spaceBetween: 10,
+      
+    //     loop: true,
+        
+    //     pagination: {
+    //         el: ".swiper-pagination",
+    //         clickable: true,
+    //     },
+    // });
     
-        var swiper2 = new Swiper(".mySwipermulti", {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        loop: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
+    //     var swiper2 = new Swiper(".mySwipermulti", {
+    //     slidesPerView: 1,
+    //     spaceBetween: 10,
+    //     loop: true,
+    //     pagination: {
+    //         el: ".swiper-pagination",
+    //         clickable: true,
+    //     },
+    // });
 
-}
-}
 

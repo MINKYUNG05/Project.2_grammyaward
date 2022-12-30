@@ -1,6 +1,6 @@
 @charset "uft-8";
 
-@media screen and (min-width: 769px){
+@media screen and (min-width: 1290px){
 * {
     font-family: 'Anton', sans-serif;
     margin: 0;
@@ -211,6 +211,7 @@ header {
 #down2 a{text-decoration:none; color:white;}
 
 #down3{width: 20%; height:100%; background-color:black;}
+
 #down3 ul{
     width: 100%;
     height: 100%;
@@ -587,7 +588,7 @@ footer hr{width: 70%; border: 1px solid gray; margin: 40px 0 40px 300px;}
 
 
     footer ul{
-        width: 70%;
+        width: 60%;
         height: 40%;
         display: flex;
         justify-content: space-around;
@@ -600,26 +601,27 @@ footer hr{width: 70%; border: 1px solid gray; margin: 40px 0 40px 300px;}
     footer ul li{font-size:11px; color:white; }
     footer ul li img{width: 75%; height: 100%; }
     footer ul li:nth-child(1){width: 300%; height: 20%; }
+    footer ul li:nth-child(5){width: 300%; height: 20%; }
     footer ul li:nth-child(6){width: 300%; height: 20%; }
-    footer ul li:nth-child(7){width: 300%; height: 20%; }
 
     #footer2{ width: 100%;
         height: 600px;
         background-color: black;
         color:white;}
 
-        #footer2 ul{width: 65%;
+        #footer2 ul{width: 60%;
             height: 70%;
             display: flex;
             align-items:center;
             color:white;
             margin: 0 auto;
             }
-
+    
+    #footer2box1{width:50%;}
     #footer2box1 img{width:90%; text-align:center;}
-    #footer2title{width: 40%; font-size: 30px;}
+    #footer2title{width: 100%; font-size: 30px;}
 
-    #footer2box2{width: 70%; text-align:left; }
+    #footer2box2{width: 80%; text-align:left; }
     #footer2email{width: 70%; background-color:transparent;
         border-top: 2px solid black;
         border-bottom: 2px solid gray;
@@ -634,6 +636,8 @@ footer hr{width: 70%; border: 1px solid gray; margin: 40px 0 40px 300px;}
 
     #footer2box3{width: 20%; line-height:30px; text-align:center;}
     #footer2box3 p{font-weight:normal!important;}
+
+    #footer2menu{display:none;}
 
     #footer3{width: 100%; height: 900px; background-color:black; color:white;
     font-size: 140px;font-weight: normal !important; }
