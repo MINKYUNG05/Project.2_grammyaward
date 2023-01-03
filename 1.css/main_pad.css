@@ -1,6 +1,6 @@
 @charset "uft-8";
 
-@media screen and (min-width: 600px) and (max-width:1289px){
+@media screen and (min-width: 600px) and (max-width:1299px){
 
 
     * {
@@ -478,20 +478,19 @@
     
     
     #box5 {
-        width: 100%;
+        width: 80%;
         height: 800px;
         margin: 0 auto;
         text-align: center;
         background-color: white;
         display:flex;
-        flex-direction: column;
         justify-content: flex-start;
         align-items: center;
     }
-    #box5_title{ height: 50%; width: 100%; font-size:80px; text-align:left;
-         margin-top:2%; margin-bottom: 5%; margin-left:200px; line-height:103% ; opacity:0;}
+    #box5_title{ height: 51%; width: 29%; font-size:80px; text-align:left;
+         margin-top:2%; margin-bottom: 5%; line-height:180% ; opacity:0;}
     #box5 span{font-size:20%; }
-    #box5 video{width: 40%; text-align:left;}
+    #box5 video{width: 50%; text-align:left;}
     
     
     
@@ -503,7 +502,7 @@
     }
     
     #box6_slider{opacity:0;}
-    #box6 hr{width: 80%; border: 1px solid gray; margin-left: 70px; margin-bottom: 20px; }
+    #box6 hr{width: 80%; border: 1px solid gray; margin-left: 228px; margin-bottom: 20px; }
 
     #box6 h2{ font-size: 17px; display:inline; }
     
@@ -514,7 +513,7 @@
     #box6 ul li{width: 17%; height: 100%; color: black; margin:10px; }
     #box6 p{font-size:13px; font-weight:normal!important;  margin:10px 0; }
     #box6logo{width:50%; height:4%; background-color:gold; position:absolute; text-align:center;
-               font-weight:bolder; border-radius: 20px; line-height:240%;font-size:10px; margin:160px 0 0 140px;}
+               font-weight:bolder; border-radius: 20px; line-height:240%;font-size:10px; margin:160px 0 0 100px;}
      #box6 span{width: 50%; font-size:19px; font-weight: bolder; }
                 #box6 p{font-size:13px; font-weight:normal!important;  margin:10px 0; }
                 #box6 .inner{width:80%; height:100%; margin-left:8%;  font-size:15px;}
@@ -552,7 +551,7 @@
         
     #box7 a:link{text-decoration:none; list-style: none; color:black; }
     
-    #box7 li:nth-child(2) img{width: 90%; height: 35%;}
+    #box7 li:nth-child(2) img{width: 90%; height: 50%;}
     #box7 li:nth-child(2){margin-top: 10px;}
     
     #box7right{font-size:20px;}
