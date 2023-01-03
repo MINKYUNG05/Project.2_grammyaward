@@ -258,7 +258,7 @@ window.onload = function(){
         600: {
             slidesPerView: 3,
         },
-        1000: {
+        1280: {
             slidesPerView: 5,
         },
     }
