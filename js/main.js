@@ -229,7 +229,7 @@ window.onload = function(){
     spaceBetween: 10,
     // loop: true,
     grabCursor: true,
-    slidesPerGroupSkip: 1,
+
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -249,7 +249,7 @@ window.onload = function(){
     spaceBetween: 10,
     // loop: true,
     grabCursor: true,
-    slidesPerGroupSkip: 1,
+
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
