@@ -465,19 +465,19 @@
     
     
     #box5 {
-        width: 80%;
+        width: 100%;
         height: 1000px;
-        margin: 0 auto;
-        text-align: center;
-        background-color: white;
         display:flex;
         flex-direction:column;
         justify-content: flex-start;
+        margin-left:65px;
     }
+
+    #box5 .inner{width: 80%;  height: 800px; margin-left: 2%; box-sizing: content-box;}
     #box5_title{ height: 50%; font-size:80px; text-align:left; margin-top:30%; margin-bottom: 5%; 
-             line-height:103% ; opacity:0;}
-    #box5 span{font-size:20%; }
-    #box5 video{width: 70%; margin-bottom: 30px;}
+             line-height:103% ; opacity:0; font-size: 70px;}
+    #box5 span{font-size:15px; }
+    #box5 video{width: 80%; margin-bottom: 5px;}
     
     
     
@@ -602,10 +602,10 @@
     #box9 ul li:hover{background-color: white; color:black; cursor:pointer;}
     #box9right{width: 100%; height: 100%; font-size: 20px; display:flex;
         text-align:right;}
-        #b91{width: 100%; height: 25%; font-size:  45px; margin-right: 40px; color: white; }
-        #b92{width: 100%; height: 25%; font-size:  45px; margin-right: 40px; color: white; display:none;}
-        #b93{width: 100%; height: 25%; font-size:  45px; margin-right: 40px; color: white; display:none;}
-        #b94{width: 100%; height: 25%; font-size:  45px; margin-right: 40px; color: white; display:none;}
+        #b91{width: 100%; height: 25%; font-size:  35px; margin-right: 40px; color: white; }
+        #b92{width: 100%; height: 25%; font-size:  35px; margin-right: 40px; color: white; display:none;}
+        #b93{width: 100%; height: 25%; font-size:  35px; margin-right: 40px; color: white; display:none;}
+        #b94{width: 100%; height: 25%; font-size:  35px; margin-right: 40px; color: white; display:none;}
     
     
     
@@ -617,10 +617,10 @@
         background-color: white;
     }
     
-    #box10tit{opacity:0;}
-    #box10 h1{font-size: 70px; text-align:left; margin-left:30px; padding-top: 100px; }
+    #box10tit{opacity:0; }
+    #box10 h1{font-size: 60px; text-align:left; margin-left:30px; padding-top: 100px; }
     #box10 p{text-align:left; margin-left:30px; }
-    #flowword {width: 90%; height: 20%; overflow:hidden; font-size: 50px; margin-left: 20px; margin-top:30px;}
+    #flowword {width: 90%; height: 20%; overflow:hidden; font-size: 40px; margin-left: 20px; margin-top:30px;}
     
     #bt{display:flex; justify-content: center; align-items: center;}
     #box10bt1{  border-radius: 50px; width: 160px; height:40px; background-color:black;
@@ -733,7 +733,7 @@
         #footer2menu p{font-weight:normal !important; font-size: 13px !important;}    
 
 
-        #footer3{width: 100%; height: 600px; background-color:black; color:white;
+        #footer3{width: 100%; height: 630px; background-color:black; color:white;
         font-size: 140px;font-weight: normal !important; }
     
         #footer3tit{opacity:0; font-size:70px; margin-top: 70px;}

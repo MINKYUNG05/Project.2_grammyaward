@@ -395,14 +395,13 @@ header {
     margin: 0 auto;
     text-align: center;
     background-color: white;
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
 }
-#box5_title{ height: 64%; width:29%; font-size:90px; text-align:left;  
-        margin-left:180px; line-height:103% ; opacity:0;}
+
+#box5 .inner{width: 80%;  height: 800px; box-sizing: content-box;
+    display:flex; justify-content: space-evenly; align-items: center; margin-left: 100px;}
+#box5_title{ height: 64%; width:29%; font-size:90px; text-align:left; line-height:103% ; opacity:0;}
 #box5 span{font-size:19px; }
-#box5 video{width: 38%; height: 50%;}
+#box5 video{width: 38%;}
 
 
 
