@@ -421,8 +421,8 @@ header {
     align-items: center; /* margin-left: 400px; */ margin-top: 50px;}
 #box6 ul li{width: 17%; height: 100%; color: black; margin:10px; }
 #box6 p{font-size:13px; font-weight:normal!important;  margin:10px 0; }
-#box6logo{width:55%; height:5%; background-color:gold; position:absolute; text-align:center;
-           font-weight:bolder; border-radius: 20px; line-height:200%;font-size:12px; margin:130px 0 0 120px;}
+#box6logo{width:55%; height:4%; background-color:gold; position:absolute; text-align:center;
+           font-weight:bolder; border-radius: 20px; line-height:150%;font-size:12px; margin:10px 0 0 10px;}
            #box6 span{font-size:19px; font-weight: bolder;}
            #box6 p{font-size:13px; font-weight:normal!important;  margin:10px 0; }
            #box6 .inner{width:80%; height:80%; margin-left:17%; margin-right: 10%; font-size:15px;}
