@@ -255,10 +255,16 @@ window.onload = function(){
         clickable: true,
     },
     breakpoints : {
-        600: {
+        550: {
+            slidesPerView: 2,
+        },
+        863: {
             slidesPerView: 3,
         },
-        1000: {
+        1299: {
+            slidesPerView: 4,
+        },
+        1330: {
             slidesPerView: 5,
         },
     }

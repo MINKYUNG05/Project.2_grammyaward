@@ -1,6 +1,6 @@
 @charset "uft-8";
 
-@media screen and (max-width: 599px){
+@media screen and (max-width: 860px){
 
     * {
         font-family: 'Anton', sans-serif;
@@ -177,24 +177,25 @@
     }
     #menuicon1{width: 100%; background-color: black; display:flex; justify-content: space-between;
         font-size:30px; cursor:pointer;}
+        #padmenu{display:none;}
         #menu1{
             /* width: 30%; height:70%;  */
             /* width: 10%; height:70%; */
-            width: 150px; height:60px;
-            margin-top: 10px; margin-left: 10px;}
+            width: 160px; height:70px;
+            margin-top: 5px; margin-left: 10px;}
         #menu2{width:20px; height:40px; margin-top:20px; margin-right:20px;}
 
     .overlay a {
-        padding: 20px 8px;
+        padding: 15px 8px;
         text-decoration: none;
-        font-size: 20px;
+        font-size: 15px;
         color: #818181;
         display: block;
         transition: 0.3s;
     }
     #menuhr{width: 90%; border: 1px solid rgba(128, 128, 128, 0.474); margin-left: 5%;}
     #text1{font-size: 25px; font-weight:bold;}
-    #popup-open{text-decoration:underline;}
+    .popup-open{text-decoration:underline !important;}
 
     .overlay a:hover,
     .overlay a:focus {
@@ -203,9 +204,9 @@
 
     .overlay .closebtn {
         position: absolute;
-        top: 20px;
+        top: 10px;
         right: 45px;
-        font-size: 60px;
+        font-size: 40px;
     }
 
     @media screen and (max-height: 450px) {
@@ -245,17 +246,16 @@
 
         #blank{display:none;}
     .popup-open{display:none;}
-        #up strong{margin-left:30px;}
+        #up strong{margin-left:15px;}
 
     #up ul {
         width: 100%;
         height:100%;
         text-align:center;
-        display: flex;
-        justify-content: space-around;
-        align-items:center;
         color:white;
-        font-size:13px;
+        font-size:12px;
+        margin: 0 auto;
+        line-height: 35px;
     }
     #up ul a{text-decoration: underline !important; color:white;}
 
@@ -266,7 +266,7 @@
         background-color: black;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         display:none;
     }
     #down1{width: 30%; height:100%; background-color:black; }
@@ -343,14 +343,16 @@
     
     #box1 {
         width: 100%;
-        height: 500px;
+        height: 600px;
         margin: 0 auto;
         background-color: rgb(24, 24, 24);
         color:white;
     }
+
+    #box1 .inner{width: 90%; height: 90%; margin: 0 auto;}
     #box1 h2{padding: 20px 0 20px 0; margin-left: 30px;}
     #box1 img{width: 100%; height: 50%;  border-bottom: 5px solid gold; margin: 0 auto;}
-    #box1 ul{width: 100%; height: 75%; display: flex; justify-content: center; flex-wrap:wrap;
+    #box1 ul{width: 100%; height: 90%; display: flex; justify-content: center; flex-wrap:wrap;
         align-items: center; text-align:center;}
     #box1 ul li{width: 30%; height: 40%; margin: 0 10px;}
     #box1 img:hover{transform:scale(1.05); transition:transform .2s; }
@@ -422,8 +424,8 @@
     #box3 strong{font-size:17px;}
     #box3 .inner{width:80%; height:80%; margin-left:8%; margin-right: 10%; font-size:20px;}
     #box3 .inner hr{margin:0 0 40px 0 ;}
-    #box3 button{border-radius: 50px; width: 100px; height:30px; background-color:white;
-        color:black; border: 1px solid white; cursor:pointer; margin-right:10px;  margin-top:7px; float:right;}
+    #box3 button{border-radius: 50px; width:80px; height:30px; background-color:white;
+        color:black; border: 1px solid white; cursor:pointer; margin-right:10px; float:right;}
     #box3 .swiper-slide{flex-wrap:wrap;}
     #box3 .swiper{width:100%;}
     #box3 .swiper-wrapper{margin: 30px 0 0 0 ; opacity:0;}
@@ -441,7 +443,7 @@
     }
     
     #box4_slider{opacity: 0;}
-    #box4 hr{width: 95%; border: 1px solid gray; /* margin-left: 400px; */ margin-bottom: 20px; }
+    #box4 hr{width: 95%; border: 1px solid white; /* margin-left: 400px; */ margin-bottom: 20px; }
     #box4title{display:flex; justify-content: space-between; align-items: center; /* margin-left: 400px; */}
     #box4title h2{ font-size: 25px; display: inline-block;}
     #box4title button{border-radius: 50px; width: 160px; height:40px; background-color:white;
@@ -451,8 +453,8 @@
     #box4 p{font-size:13px; font-weight:normal!important;  margin:10px 0; }
     #box4 .inner{width:80%; height:80%; margin-left:8%; margin-right: 10%; font-size:15px;}
     #box4 .inner hr{margin:0 0 40px 0 ;}
-    #box4 button{border-radius: 50px; width: 100px; height:30px; background-color:white;
-        color:black; border: 1px solid white; cursor:pointer; margin-right:10px; margin-top:7px; float:right;}
+    #box4 button{border-radius: 50px; width: 80px; height:30px; background-color:white;
+        color:black; border: 1px solid white; cursor:pointer; margin-right:10px; float:right;}
     #box4 .swiper-slide{flex-wrap:wrap;}
     #box4 .swiper{width:100%;}
     #box4 .swiper-wrapper{margin: 30px 0 0 0 ; opacity:0;}
@@ -463,7 +465,7 @@
     
     
     #box5 {
-        width: 100%;
+        width: 80%;
         height: 1000px;
         margin: 0 auto;
         text-align: center;
@@ -471,12 +473,11 @@
         display:flex;
         flex-direction:column;
         justify-content: flex-start;
-        align-items: center;
     }
-    #box5_title{ height: 50%; width:85%; font-size:80px; text-align:left; margin-top:30%; margin-bottom: 5%; 
+    #box5_title{ height: 50%; font-size:80px; text-align:left; margin-top:30%; margin-bottom: 5%; 
              line-height:103% ; opacity:0;}
     #box5 span{font-size:20%; }
-    #box5 video{width: 85%; }
+    #box5 video{width: 70%; margin-bottom: 30px;}
     
     
     
@@ -488,9 +489,9 @@
     }
     
     #box6_slider{opacity:0;}
-    #box6 hr{width: 80%; border: 1px solid gray; margin-left: 40px; margin-bottom: 20px; }
+    #box6 hr{width: 100%; border: 1px solid black; margin-left: 30px; margin-bottom: 20px; }
 
-    #box6 h2{ font-size: 20px;display:inline; }
+    #box6 h2{ font-size: 17px; display:inline; }
     
     #box6 img{width: 100%; height: 33%;  border-bottom: 10px solid gold; margin: 0 auto; }
     
@@ -498,14 +499,14 @@
         align-items: center; /* margin-left: 400px; */ margin-top: 50px;}
     #box6 ul li{width: 17%; height: 100%; color: black; margin:10px; }
     #box6 p{font-size:13px; font-weight:normal!important;  margin:10px 0; }
-    #box6logo{width:45%; height:4%; background-color:gold; position:absolute; text-align:center;
-               font-weight:bolder; border-radius: 20px; line-height:200%;font-size:12px; margin:160px 0 0 160px;}
+    #box6logo{width:58%; height:4%; background-color:gold; position:absolute; text-align:center;
+               font-weight:bolder; border-radius: 20px; line-height:200%;font-size:12px; top:10px; left:10px;}
      #box6 span{width: 50%; font-size:19px; font-weight: bolder; }
                 #box6 p{font-size:13px; font-weight:normal!important;  margin:10px 0; }
                 #box6 .inner{width:80%; height:100%; margin-left:8%;  font-size:15px;}
                 #box6 .inner hr{margin:0 0 40px 0 ;}
-                #box6 button{border-radius: 50px; width: 100px; height:30px; background-color:black;
-                    color:white; cursor:pointer; margin-left:30px; }
+                #box6 button{border-radius: 50px; width: 80px; height:30px; background-color:black;
+                    color:white; cursor:pointer; margin-left:30px; border: 1px solid black;}
                 #box6 .swiper-slide{flex-wrap:wrap;}
                 #box6 .swiper{width:100%; height:88%;}
                 #box6 .swiper-wrapper{margin: 30px 0 0 0 ; opacity:0;}
@@ -523,13 +524,14 @@
     
     #box7_title{opacity:0;}
     
-    #box7 hr{width: 77%; border: 1px solid gray; margin-left: 30px; margin-bottom: 20px; }
-    #box7 h2{ font-size: 40px; margin-bottom: 30px; margin-left:30px;}
+    /* #box7 hr{width: 77%; border: 1px solid gray; margin-left: 30px; margin-bottom: 20px; } */
+    #box7 h2{ font-size: 40px; margin-bottom: 30px; margin-left:58px;}
     #box7 span{font-size:50px; margin: 10px 0; }
     #box7 img{width: 8%; height: 30%; }
-    
-    #box7  ul{width:85%; height: 70%; display: flex; flex-direction:column; justify-content: flex-start; 
-        align-items: center; }
+    #box7 .inner{width: 80%; height: 100%; margin-left: 50px;}
+    #box7 .inner hr{width: 90%; border: 1px solid black; }
+
+    #box7  ul{width:85%; height: 70%; display: flex; flex-direction:column; justify-content: flex-start; }
     #box7 ul li{width: 85%; height: 100%; color: black; margin:10px; vertical-align:center; }
     #box7 p{font-size:13px; font-weight:normal!important;  margin:10px 0; }
     #box7 button{border-radius: 50px; width: 160px; height:40px; background-color:transparent;
@@ -553,25 +555,31 @@
     }
     
     #box8_tit{opacity:0;}
-    #box8 hr{width: 95%; border: 1px solid gray; margin-left: 300px; margin-bottom: 20px; }
-    #box8title{ width: 90%; display:flex; justify-content: space-between; align-items: center; margin-top: 50px;}
-    #box8title h2{ font-size: 25px; display: inline-block; }
+    /* #box8 hr{width: 95%; border: 1px solid gray; margin-left: 300px; margin-bottom: 20px; } */
+
+    #box8 .inner{width: 95%;}
+    #box8 .inner hr{width: 80%; border: 1px solid black;  margin-bottom: 20px;  margin-left:50px;}
+
+    #box8title{ width: 90%; display:flex; justify-content: space-between; align-items: center; margin-top: 50px;
+            margin-left:20px;}
+    #box8title h2{ font-size: 25px; display: inline-block;}
     #box8title button{border-radius: 50px; width: 140px; height:30px; background-color:black !important;
         color:white; border: 1px solid black; cursor:pointer; margin-right:5%; }
     
-    #box8 hr{width: 77%; border: 1px solid gray; margin-left: 30px; }
+    /* #box8 hr{width: 80%; border: 1px solid gray; margin-left: 30px; } */
     #box8 h2{ font-size: 25px; margin-left:30px;}
     #box8 span{font-size:50px; margin: 10px 0; }
     #box8 img{width: 9%; height: 37%; }
     
-    #box8  ul{width: calc(100% - 10px); height: 80%; display: flex; flex-direction: column; justify-content: flex-start; 
-        align-items: center; margin-left:10px; margin-top: 20px;}
+    #box8  ul{width: calc(100% - 20px); height: 80%; display: flex; flex-direction: column; justify-content: flex-start; 
+     margin-left:50px; margin-top: 20px;}
     #box8 ul li{width: 90%; height: 100%; color: black;  vertical-align:center; }
     #box8 p{font-size:13px; font-weight:normal!important;  margin:10px 0; }
-    #box8 li:nth-child(1) button{border-radius: 50px; width: 85%; height:40px; background-color:transparent; margin: 30px 0;}
+    #box8 li:nth-child(1) button{border-radius: 50px; width: 85%; height:40px;
+         background-color:transparent; margin: 30px 0; border: 1px solid black;}
     
-    #box8 li:nth-child(2) img{width: 85%; height: 85%; }
-    #box8 li:nth-child(2) img:hover{box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;}
+    #box8 li:nth-child(2) img{width: 70%; height: 85%; }
+    #box8 li:nth-child(2) img:hover{}
     #box8 a{text-decoration:none; color:black;}
     
     
@@ -612,7 +620,7 @@
     #box10tit{opacity:0;}
     #box10 h1{font-size: 70px; text-align:left; margin-left:30px; padding-top: 100px; }
     #box10 p{text-align:left; margin-left:30px; }
-    #flowword {width: 90%; height: 20%; overflow:hidden; font-size: 50px; margin-left: 30px; margin-top:30px;}
+    #flowword {width: 90%; height: 20%; overflow:hidden; font-size: 50px; margin-left: 20px; margin-top:30px;}
     
     #bt{display:flex; justify-content: center; align-items: center;}
     #box10bt1{  border-radius: 50px; width: 160px; height:40px; background-color:black;
@@ -627,18 +635,18 @@
     
     #box11 {
         width: 100%;
-        height: 800px;
+        height: 900px;
         margin: 0 auto;
         background-color: white;
     }
     
     #box11tit{opacity:0;}
-    #box11 hr{width: 77%; border: 1px solid gray; margin-left: 30px; margin-bottom: 20px; }
-    #box11 h2{ font-size: 40px; margin-bottom: 30px; margin-left:30px;}
+    #box11 hr{width: 77%; border: 1px solid gray; margin-left: 20px; margin-bottom: 20px; }
+    #box11 h2{ font-size: 40px; margin-bottom: 30px; margin-left:20px;}
     #box11 span{font-size:70px; margin: 10px 0; }
     
     #box11  ul{width:90%; height: 100%; display: flex; justify-content: flex-start; flex-direction:column;
-             margin-left:30px; }
+             margin-left:20px; }
     #box11 ul li{width: 90%; height: 70%; color: black;  vertical-align:center; }
     #box11 p{font-size:15px; font-weight:normal!important;  margin:10px 0; line-height: 30px; }
     #box11 button{border-radius: 50px; width: 160px; height:40px; background-color:transparent;
@@ -664,17 +672,19 @@
     #sponsors h2{ font-size: 25px; display: inline-block;}
     #sponsors button{border-radius: 50px; width: 150px; height:30px; background-color:white !important;
         color:black; border: 1px solid black; cursor:pointer; margin-right:5%; }
-    footer hr{width: 80%; border: 1px solid gray; margin: 40px 0 40px 30px;}
+    footer hr{width: 80%; border: 1px solid gray; margin: 60px 0 20px 30px;}
     
     
         footer ul{
-            width: 100%;
+            width: 65%;
             height: 400px;
             display: flex;
             flex-direction:column;
             text-align:center;
             align-items:center;
             color:white;
+            margin-left: 100px;
+            margin-bottom: 20px;
             
             
         }
@@ -685,7 +695,7 @@
         footer ul li:nth-child(7){width: 70%; height: auto; }
     
         #footer2{ width: 100%;
-            height: 350px;
+            height: 445px;
             background-color: black;
             color:white;}
     
@@ -694,7 +704,7 @@
                 display: flex;
                 flex-direction:column;
                 color:white;
-                margin-left: 30px;
+                margin-left: 50px;
                 }
         
         #footer2box1 img{width:50%; margin-bottom:10px; }
@@ -706,8 +716,7 @@
             border-bottom: 2px solid gray;
             border-left: 2px solid black;
             border-right: 2px solid black;
-        color:gray; font-size: 20px; font-weight:bolder;
-        margin:15px 0;}
+        color:gray; font-size: 20px; font-weight:bolder; margin:15px 0;}
     
         #footer2content{ width: 90%; font-size:7px; font-weight:normal!important;}
         #footer2 button{border-radius: 50px; width: 90%; height:40px; background-color:white !important;
@@ -724,12 +733,12 @@
         #footer2menu p{font-weight:normal !important; font-size: 13px !important;}    
 
 
-        #footer3{width: 100%; height: 800px; background-color:black; color:white;
+        #footer3{width: 100%; height: 600px; background-color:black; color:white;
         font-size: 140px;font-weight: normal !important; }
     
         #footer3tit{opacity:0; font-size:70px; margin-top: 70px;}
     
-        #footer3box{display:flex; justify-content: flex-start; flex-direction:column; margin-left:30px;}
+        #footer3box{width: 90%; display:flex; justify-content: flex-start; flex-direction:column; margin-left:30px;}
         #footer3 p{font-size: 13px; display: block; margin: 50px 0 50px 30px; }
         #footer3 hr{width: 80%; border: 1px solid white; margin-left: 30px;}
         #last{width: 100%; height: 40px; background-color:black; font-size: 10px; font-weight:normal!important;
