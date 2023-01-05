@@ -190,7 +190,7 @@
         margin-top:10px;}
 
     #padmenu a{text-decoration:none; color:white; font-size:18px;}
-
+    /* #padmenu a:hover{border-bottom: 3px solid white;} */
         #menu1{
             /* width: 30%; height:70%;  */
             /* width: 10%; height:70%; */
@@ -302,6 +302,7 @@
         display:none;
     }
     #down2 a{text-decoration:none; color:white;}
+    #down2 a:hover{border-bottom: 3px solid white;}
     
     #down3{width: 20%; height:100%; background-color:black;}
     #down3 ul{

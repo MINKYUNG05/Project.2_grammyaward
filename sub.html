@@ -1,112 +1,278 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            font-family: 'Lato', sans-serif;
-        }
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features | Grammy Awards</title>
+ <!-- css    -->
+    <link rel="stylesheet" href="1.css/sub.css">
+    <link rel="stylesheet" href="1.css/sub_mobile.css">
+    <link rel="stylesheet" href="1.css/sub_pad.css">
+    <link rel="stylesheet" href="1.css/common.css">
+<!-- favicon -->
+    <link rel="shortcut icon" href="img/fav2.ico">
 
-        .overlay {
-            height: 0%;
-            width: 100%;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: rgb(0, 0, 0);
-            background-color: rgba(0, 0, 0);
-            overflow-y: hidden;
-            transition: 0.5s;
-        }
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
 
-        .overlay-content {
-            position: relative;
-            top: 15%;
-            width: 100%;
-            text-align: center;
-            margin-top: 5px;
-        }
-        span{display:flex; justify-content: flex-end;}
-        span img{width: 10%; height:10%;}
-
-        .overlay a {
-            padding: 20px 8px;
-            text-decoration: none;
-            font-size: 20px;
-            color: #818181;
-            display: block;
-            transition: 0.3s;
-        }
-        hr{width: 90%; border: 1px solid rgba(128, 128, 128, 0.474);}
-        #text1{font-size: 30px; font-weight:bold;}
-        #popup-open{text-decoration:underline;}
-
-        .overlay a:hover,
-        .overlay a:focus {
-            color: #f1f1f1;
-        }
-
-        .overlay .closebtn {
-            position: absolute;
-            top: 20px;
-            right: 45px;
-            font-size: 60px;
-        }
-
-        @media screen and (max-height: 450px) {
-            .overlay {
-                overflow-y: auto;
-            }
-
-            .overlay a {
-                font-size: 20px
-            }
-
-            .overlay .closebtn {
-                font-size: 40px;
-                top: 15px;
-                right: 35px;
-            }
-        }
-    </style>
+    <script src="js/main.js"></script>
 </head>
-
 <body>
+    <!-- header -->
 
-    <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
+    <body>
+        <!-- popup -->
+        <div id="wrap">
         
-                    <a href="" id="text1">Enter Now</a>
-                    <a href="" id="text1">Winners</a>
-                    <a href="" id="text1">Features</a>
-                    <a href="" id="text1">Grammy Talks</a>
-               <hr>
-                    <a href="">About</a>
-                    <a href="">Resources</a>
-                    <a href="">Sponsors</a>
-                    <a href="">Press</a>
-                    <a href="">Podcast</a>
-                <hr>
-                <a href="#" id="popup-open">Gallery Login or Register</a>
+            <div id="popup">
+                <div id="popup-head">
+        
+                    <span>  </span> <span>Sign In</span> <a href="#" id="popup-close"><img src="img/delet.png"></a>
+                </div>
+        
+                <div id="popup-content">
+                    <ul>
+                        <li id="popup-logo"><img src="img/grammylogo4.png"></li>
+                        <li id="text1">Unlock Access to the Best of the Internet</li>
+                        <li id="text2">Register or sign-in using your Grammys Account.</li>
+                        <li><input type="text" value="Email Address" name="email" id="popup-input"></li>
+                        <li><input type="text" value="Password" name="Password" id="popup-input"></li>
+                        <li id="forget"><u>Forget Password?</u></li>
+                        <li><button id="signin">Sign In</button></li>
+                        <div id="content-down">
+                        <li id="text3">Don't Have An Account?</li>
+                        <li><button id="signup">Sign Up Now</button></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+        <!--desktop.menu -->
+            <header>
+                <div id="up">
+                    <ul>
+                        <li id="blank">           </li>
+                        <li><strong>27TH ANNUAL GRAMMYS: CALL FOR ENTRIES OPEN <a href="#"><u>ENTER NOW</u></a></strong></li>
+                        <li><a href="#" class="popup-open">Gallery Login or Register</a></li>
+                    </ul>
+                </div>
+                <div id="down">
+                    <div id="down1">
+                        <img src="img/grammylogo2.PNG" alt="logo">
+                    </div>
+                    <div id="down2">
+                        <ul>
+                            <li><a href="">Enter Now</a></li>
+                            <li><a href="">Winners</a></li>
+                            <li><a href="">Features</a></li>
+                            <li><a href="">Grammy Talks</a></li>
+                        </ul>
+                    </div>
+                    <div id="down3">
+                        <ul>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Resources</a></li>
+                            <li><a href="">Sponsors</a></li>
+                            <li><a href="">Press</a></li>
+                            <li><a href="">Podcast</a></li>
+                            <li><img src="img/whiteicon.png" alt="glass"></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+        
+                <!-- mobile menu -->
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                    
+                                <a href="" id="text1">Enter Now</a>
+                                <a href="" id="text1">Winners</a>
+                                <a href="" id="text1">Features</a>
+                                <a href="" id="text1">Grammy Talks</a>
+                           <hr id="menuhr">
+                                <a href="">About</a>
+                                <a href="">Resources</a>
+                                <a href="">Sponsors</a>
+                                <a href="">Press</a>
+                                <a href="">Podcast</a>
+                            <hr id="menuhr">
+                            <a href="#" class="popup-open">Gallery Login or Register</a>
+                    </div>
+                </div>
+            
+                <span onclick="openNav()" id="menuicon1">
+        
+                    <img src="img/grammylogo2.PNG" alt="grammy" id="menu1">
+        
+                        <div id="padmenu">        
+                            <a href="" id="text1">Enter Now</a>
+                            <a href="" id="text1">Winners</a>
+                            <a href="" id="text1">Features</a>
+                            <a href="" id="text1">Grammy Talks</a>
+                        </div>
+        
+                    <img src="img/3line.ico" alt="menu" id="menu2"> 
+                </span>
+            
+        <!-- slider -->
+            </header>
 
-    <span onclick="openNav()" id="menuicon1">
-       <p></p> <img src="img/menuicon2.png" alt="menu"> </span>
+            <div id="slider">
+                <div id="word"> Grammy Features </div>
+                <div id="word2">Feature Stories</div>
+                <div class="inner">
+                    <div id="article1">
+                        <img src="img/sub2.webp" alt="grammy"><br>
+                        <span>27th Annual Grammy Awards</span><br>
+                        <p>The 2022 International Index</p><br>
 
-    <script>
-        function openNav() {
-            document.getElementById("myNav").style.height = "100%";
-        }
+                        <span> November 29,2022</span>
+                    </div>
+                    <div id="article2">
+                        <img src="img/sub3.webp" alt="grammy"><br>
+                        <span>27th Annual Grammy Awards</span><br>
+                        <p>Meet the Newest Judges</p><br>
 
-        function closeNav() {
-            document.getElementById("myNav").style.height = "0%";
-        }
-    </script>
+                        <span> September 22,2022</span>
+                    </div>
+                </div>
+            </div>
+<!-- blog section -->
+            <div id="blog-section">
+                <div class="inner">
+                <div id="blog-header">
+                    <ul>
+                        <li>News</li>
+                        <li>Podcasts</li>
+                        <li></li>
+                        <li>
+                            <select name="">
+                            <option value="All Topics">All Topics</option>
+                            <option value="Features">Features</option>
+                            <option value="Indexes">Indexes</option>
+                            <option value="Insights">Insights</option>
+                        </select>
+                    </li>
+                        <li>
+                            <select name="">
+                                    <option value="All Years">All Years</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                </select>
+                        </li>
+                    </ul>
+                </div>
 
+                <div id="blog-news">
+                   <div id="news-box">
+                    <ul>
+                        <li><img src="img/app.png" alt="app"></li>
+                        <li><p>Winner's Spotlight</p>
+                            <p>Winner Profile with Tonya Monsley, Host of Truth Be Told</p>
+                            <p>Mosley gives us an exclusive behind-the-scenes 
+                                look at the process of healing community through her podcast</p>
+                            <p>December 8,2022</p></li>
+                    </ul>
+                   </div>
+                </div>
+
+                <div id="blog-podcast"></div>
+             </div>
+            </div>
+
+
+            <!-- footer -->
+            <footer>
+
+                <div id="sponsors">
+                    <h2>Sponsors</h2> <button> View All Sponsors</button>
+                </div>
+                <hr>
+        
+                <ul>
+                    
+                    <li><a href="#"><img src="img/sponser2.png" alt="grammy"></a></li>
+                    <li><a href="#"><img src="img/sponser3.png" alt="grammy"></a></li>
+                    <li><a href="#"><img src="img/sponser4.png" alt="grammy"></a></li>
+                    <li><a href="#"><img src="img/sponser5.png" alt="grammy"></a></li>
+                    <li><a href="#"><img src="img/sponser7.png" alt="grammy"></a></li>
+                    <li><a href="#"><img src="img/sponser9.png" alt="grammy"></a></li>
+        
+                </ul>
+                <hr>
+            </footer>
+        
+            <div id="footer2">
+                <ul>
+                    <li id="footer2box1"><img src="img/menugrammy.jpg" alt="logo"></li>
+                    <li id="footer2box2">
+                        <p id="footer2title">Stay in Touch<br></p>
+                        <input type="email" value="Email Address*" name="Email Address*" id="footer2email"><br>
+                        <p id="footer2content"> <input type="checkbox" value="" name="">
+                            By checking the box I agree and consent to the terms and
+                            conditions of <br>the Privacy Policy, including the Cookes Policy. </p><br>
+                        <button>Sign Up</button>
+                    </li>
+        
+        
+                    <li id="footer2box3">
+                        Organization<br>
+                        <p>FAQ<br>
+                            Brand Studio<br>
+                            Contact Us<br>
+                            Privacy<br>
+                            Join The Team</p>
+                    </li>
+        
+        
+                    <li id="footer2box3"> Connect<br>
+                        <p>Instargram<br>
+                            Facebook<br>
+                            Twitter<br>
+                            Youtube<br>
+                            LinkedIn<br></p>
+                    </li>
+                </ul>
+            </div>
+        
+            <div id="footer2menu">
+                <li>
+                    Organization<br>
+                    <p>FAQ<br>
+                        Brand Studio<br>
+                        Contact Us<br>
+                        Privacy<br>
+                        Join The Team</p>
+                </li>
+        
+        
+                <li> Connect<br>
+                    <p>Instargram<br>
+                        Facebook<br>
+                        Twitter<br>
+                        Youtube<br>
+                        LinkedIn<br></p>
+                </li>
+            </div>
+        
+            <div id="footer3">
+                <hr>
+                <div id="footer3box">
+                    <span id="footer3tit">Honoring<br>
+                        The Best Of The<br>
+                        Internet Since <br>
+                        ©1997<br></span>
+                </div>
+                <p>Site designed <br>
+                    by BASIC®</p>
+                <hr>
+        
+                <div id="last">© 2022 The Grammy Awards. All rights reserved.</div>
+        
+            </div>
+        
 </body>
-
 </html>
