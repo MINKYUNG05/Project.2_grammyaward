@@ -1,99 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-#box2 {
-    width: 100%;
-    height: 10%;
-    margin: 0 auto;
-    color:black;
-     }
 
-    .inner{width:80%; height:80%; margin-left:17%; margin-right: 10%; }
+    <title></title>
 
-    #box2 h2{ font-size: 40px; margin: 0 0 10px 0; padding: 90px 0 0 0;}
-    #box2 h4{font-size: 25px; margin: 10px 0 10px 0;}
-    #box2 hr{margin: 20px 0 20px 0;}
+    <style>
+        * {
+            margin: 0;
+        }
 
-    .swiper{width:auto; height: 80%;}
+        ul,
+        li,
+        ol {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
 
-    .swiper-slide {text-align: center; font-size: 18px; font-weight:bolder; color:black;
+        ​ #slidewrap {
+            width: 1000px;
+            height: 350px;
+            margin: 50px auto;
+            position: relative;
+        }
 
-    /* Center slide text vertically */
-    display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex;
-    -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center;
-    -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; }
-   
-    /* .mySwiper{margin-left:400px;} */
-    .swiper .swiper-wrapper{width: 100%; height: 90%; align-items: center; }
+        ​ .slide {
+            width: 100%;
+        }
 
-    .swiper-slide{width: 50%; height: 45%;  margin: 81px 0 80px 0; font-size:25px; color:black; background-color:lightblue;
-    border-radius: 10px; display:flex; flex-direction:column; justify-content: flex-end; align-items: center; text-align:center;}
-    .swiper-silde img{width: 100%; height: 100%;}
+        .slide>li {
+            width: 100%;
+            height: 350px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
 
-   .swiper .swiper-pagination-bullet-active {
-        background-color: red !important;
-      }
-      .swiper .swiper-pagination-bullet{background-color:gray; opacity:1;}
+        .slide>li>img {
+            width: 100%;
+            height: auto;
+        }
 
-  </style>
+        .slide li:not(:first-child) {
+            display: none;
+        }
+
+        p{
+            width: 350px;
+            height: 300px;
+            line-height: 140px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            /* background-color: #fff; */
+            opacity: 0.8;
+            border-radius: 10px;
+            font-size:200px;
+            font-weight: bolder;
+            color:white;
+        }
+    </style>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
-  <section id="box2">
-    <div class="inner">
-        <h2>The Latest From The grammys</h2>
-        <hr>
-        <h4>The Good Stuff</h4>
 
-        <div class="swiper mySwiper">
-
-            <div class="swiper-wrapper">
-
-                <div class="swiper-slide"><img src="img/stage1.webp" alt="grammy"><br>
-                  <p>Winner's Spotlight</p><br> 
-                  <strong>Winner Profile with Tonya <br>
-                  Mosley, Host of Truth Be Told</strong><br>
-                  <p>December 8, 2022</p></div>
-                <div class="swiper-slide">2022 Grammy Winners<br> Gallery + Index <button> Read Now</button></div>
-                <div class="swiper-slide">Meet the Newest <br> Judges for <br> The Grammy Awards<button> Read
-                        Now</button></div>
-                <div class="swiper-slide">New Categories for<br> Metverse, Responsible <br> Technology and More
-                    <button> Read Now</button>
-                </div>
-                <div class="swiper-slide"> Responsible<br> Technology Report <button> Download Now</button></div>
-                <div class="swiper-slide"> See All the Best<br> Moments From The <br> 26th Annual Grammy<br>
-                    Awards Show <button> Read Now</button></div>
-                <div class="swiper-slide">New Grammy Podcast<br> 2022<button> Read Now</button></div>
-                <div class="swiper-slide">The Stories <br> Behind the Build<button> See the Experiences</button></div>
-
-
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-
+    <div id="slidewrap">
+        <ul class="slide">
+            <li><img src="IMG/sub1.jpg" alt="slide image"></li>
+            <li><img src="IMG/sub2.webp" alt="slide image"></li>
+            <li><img src="IMG/sub3.webp" alt="slide image"></li>
+        </ul>
+        <p>Grammy Awards</p>
 
     </div>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
+        let i = 0;
 
-            slidesPerView: 4,
-            spaceBetween: 10,
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
+        function slide() {
+            i++;
+            if (i > $('.slide li:last').index()) {
+                i = 0
+            }
+            $('.slide li').eq(i).stop().fadeIn('slow');
+            $('.slide li').eq(i - 1).stop().fadeOut();
+        }
+        // setInterval(slide, 3000);
     </script>
-</section>
-
 </body>
 </html>
