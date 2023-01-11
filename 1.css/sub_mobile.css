@@ -65,12 +65,12 @@
         .news-box{width: 100%; height: 500px; display:flex; border-bottom: 1px solid gray; }
         .news-box ul{width: 100%; display:flex; flex-direction: column; margin: 0 auto;}
         .news-box ul li{ width: 100%; ; margin: 0 auto; }
-        .news-box ul li img{width:98%;  height:90%; margin-top:0;}
+        .news-box ul li img{width:100%;  height:90%; margin-top:0; }
         .news-box ul li img:hover{cursor:pointer; opacity: 0.8;}
     
         .news-box ul li p{font-size:11px; font-weight: normal!important ;}
         .news-box ul li span{font-size:20px; }
-        .news-box ul li:nth-of-type(2) p:nth-of-type(2) {font-size:12px; color:rgb(97, 96, 96);}
+        .news-box ul li:nth-of-type(2) p:nth-of-type(2) {font-size:12px; color:rgb(97, 96, 96); }
         .news-box ul li:nth-of-type(2){padding-top: 5px;}
  
         /* middle section-sign up box */
@@ -87,8 +87,8 @@
         .news-boxshort{width: 100%; height: 400px; display:flex; 
                     border-bottom: 1px solid gray; margin-top: 40px;}
         .news-boxshort ul{width: 100%; display:flex; flex-direction: column; margin: 0 auto;}
-        .news-boxshort ul li{ width: 100%; height: auto; margin: 0 auto;}
-        .news-boxshort ul li img{width:400px; height: 200px; margin-top:20px; }
+        .news-boxshort ul li{ width: 100%; height:50%; margin: 0 auto;}
+        .news-boxshort ul li img{width:100%; height: 96%; margin-top:2px; }
         .news-boxshort ul li img:hover{cursor:pointer; opacity: 0.8;}
 
         .news-boxshort ul li p{font-size:13px; font-weight: normal!important ;}
