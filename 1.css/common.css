@@ -919,7 +919,7 @@ footer hr{width: 70%; border: 1px solid gray; margin: 40px 0 40px 250px;}
         transition: 0.3s;
     }
     #menuhr{width: 90%; border: 1px solid rgba(128, 128, 128, 0.474); margin-left: 5%;}
-    #text1{font-size: 25px; font-weight:bold;}
+    #text1{font-size: 22px; font-weight:bold;}
     .popup-open{text-decoration:underline !important;}
 
     .overlay a:hover,
